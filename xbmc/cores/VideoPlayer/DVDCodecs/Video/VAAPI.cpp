@@ -49,3 +49,9 @@ CVAAPI::CVAAPI()
 {
   CLog::Log(LOGDEBUG, "VAAPI::CVAAPI - Constructor initialized");
 }
+
+CVAAPI::~CVAAPI()
+{
+  Close();
+  CLog::Log(LOGDEBUG, "VAAPI::~CVAAPI - Destroyed VAAPI decoder object");
+}
